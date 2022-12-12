@@ -1,0 +1,21 @@
+﻿@model MvcStok.Models.Entity.TblMusteriler
+
+@{
+    ViewBag.Title = "GUNCELLE";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<form method="post">
+    <label>Müşteri ID</label>
+    <input name="MusteriID" class="form-control" value="@Model.MusteriID" />
+    <br />
+    <label>Müşteri Adı</label>
+    <input type="text" name="MusteriAd" class="form-control" value="@Model.MusteriAd" />
+    <br />
+    <label>Müşteri Soyadı</label>
+    <input type="text" name="MusteriSoyad" class="form-control" value="@Model.MusteriSoyad" />
+    <br />
+    <button class="btn btn-primary">Müşteri Güncelle</button>
+
+</form>
+
